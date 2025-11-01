@@ -14,22 +14,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Project Structure](#project-structure)
-- [Usage Guide](#usage-guide)
-- [Configuration](#configuration)
-- [License](#license)
-- [Author](#author)
-
----
-
 ## 🌟 Overview
 
 **CodeCollab** is a real-time collaborative code editor that allows multiple users to write and edit code simultaneously. With built-in live preview for web languages, syntax highlighting powered by Monaco Editor, and optional GitHub integration, it's perfect for pair programming, coding interviews, teaching, or collaborative development.
