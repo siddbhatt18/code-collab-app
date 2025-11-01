@@ -1,0 +1,90 @@
+.active-users {
+  padding: 1rem;
+  background: var(--ultra-light-blue);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--pale-blue);
+}
+
+.users-title {
+  margin: 0 0 1rem 0;
+  font-size: 0.875rem;
+  color: var(--primary-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-gray);
+  transition: var(--transition-base);
+}
+
+.user-item:hover {
+  border-color: var(--accent-blue);
+  box-shadow: var(--shadow-sm);
+  transform: translateX(2px);
+}
+
+.user-item.current-user {
+  background: var(--pale-blue);
+  border-color: var(--primary-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: var(--primary-blue);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.user-item.current-user .user-avatar {
+  background: var(--primary-blue-dark);
+}
+
+.user-details {
+  flex: 1;
+}
+
+.user-name {
+  font-weight: 600;
+  color: var(--dark-gray);
+  font-size: 0.875rem;
+}
+
+.user-status {
+  font-size: 0.75rem;
+}
+
+.no-users {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-gray);
+  font-size: 0.875rem;
+}
+
+.no-users p {
+  margin: 0;
+}

@@ -1,0 +1,140 @@
+.header {
+  background: var(--white);
+  color: var(--charcoal);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-gray);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-icon {
+  color: var(--primary-blue);
+  stroke-width: 2;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  letter-spacing: -0.02em;
+}
+
+.room-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--ultra-light-blue);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--pale-blue);
+}
+
+.room-label {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.room-id {
+  font-family: 'SF Mono', monospace;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--primary-blue);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
+.stat-item svg {
+  color: var(--text-gray);
+}
+
+.stat-item.users {
+  padding: 0.5rem 0.875rem;
+  background: var(--ultra-light-blue);
+  border-radius: var(--radius-full);
+  color: var(--primary-blue);
+}
+
+.stat-item.users svg {
+  color: var(--primary-blue);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.status-dot.connected {
+  background: var(--success);
+  box-shadow: 0 0 0 2px var(--success-light);
+}
+
+.status-dot.disconnected {
+  background: var(--error);
+  box-shadow: 0 0 0 2px var(--error-light);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .header-left,
+  .header-right {
+    width: 100%;
+  }
+  
+  .header-stats {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
