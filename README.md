@@ -26,7 +26,7 @@
 - [Usage Guide](#usage-guide)
 - [Configuration](#configuration)
 - [License](#license)
-- [Contact](#contact)
+- [Author](#author)
 
 ---
 
@@ -562,7 +562,7 @@ See [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👨‍💻 Contact
+## 👨‍💻 Author
 
 - Siddharth Bhattacharya - [LinkedIn](https://www.linkedin.com/in/siddharth-bhattacharya-8b9710247/) |  [Github](https://github.com/siddbhatt18/)
 
